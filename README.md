@@ -8,8 +8,7 @@ This project is looking for a maintaner.
 
 If you're ready to support `j2cli` and keep it going, please respond :)
 
-Discussion here: <https://github.com/kolypto/j2cli/discussions/83>
-
+Discussion here: [Maintainer Wanted](https://github.com/kolypto/j2cli/discussions/83)
 
 
 
