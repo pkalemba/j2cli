@@ -1,10 +1,22 @@
 [![Build Status](https://travis-ci.org/kolypto/j2cli.svg)](https://travis-ci.org/kolypto/j2cli)
 [![Pythons](https://img.shields.io/badge/python-2.6%20%7C%202.7%20%7C%203.4%E2%80%933.7%20%7C%20pypy-blue.svg)](.travis.yml)
 
+🚧 Maintainer Wanted 🚧
+=======================
+
+This project is looking for a maintaner.
+
+If you're ready to support `j2cli` and keep it going, please respond :)
+
+Discussion here: <https://github.com/kolypto/j2cli/discussions/83>
+
+
+
+
 j2cli - Jinja2 Command-Line Tool
 ================================
 
-`j2cli` is a command-line tool for templating in shell-scripts, 
+`j2cli` is a command-line tool for templating in shell-scripts,
 leveraging the [Jinja2](http://jinja.pocoo.org/docs/) library.
 
 Features:
@@ -106,11 +118,11 @@ Password: {{ env("APP_PASSWORD") }}
 Compile a template using INI-file data source:
 
     $ j2 config.j2 data.ini
-    
+
 Compile using JSON data source:
 
     $ j2 config.j2 data.json
-    
+
 Compile using YAML data source (requires PyYAML):
 
     $ j2 config.j2 data.yaml
@@ -120,9 +132,9 @@ Compile using JSON data on stdin:
     $ curl http://example.com/service.json | j2 --format=json config.j2
 
 Compile using environment variables (hello Docker!):
-    
+
     $ j2 config.j2
-    
+
 Or even read environment variables from a file:
 
     $ j2 --format=env config.j2 data.env
@@ -131,7 +143,7 @@ Or pipe it: (note that you'll have to use the "-" in this particular case):
 
     $ j2 --format=env config.j2 - < data.env
 
-    
+
 # Reference
 `j2` accepts the following arguments:
 
@@ -329,7 +341,7 @@ All of them are optional.
 The example customization.py file for your reference:
 
 ```python
-# 
+#
 # Example customize.py file for j2cli
 # Contains potional hooks that modify the way j2cli is initialized
 
@@ -401,7 +413,7 @@ def extra_tests():
         custom_odd=lambda n: True if (n % 2) else False
     )
 
-# 
+#
 
 ```
 
