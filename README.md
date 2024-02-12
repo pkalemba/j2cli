@@ -10,6 +10,11 @@ If you're ready to support `j2cli` and keep it going, please respond :)
 
 Discussion here: [Maintainer Wanted](https://github.com/kolypto/j2cli/discussions/83)
 
+Alternatively, here are some actively maintained forks:
+
+* <https://github.com/kpfleming/jinjanator>
+* <https://github.com/mattrobenolt/jinja2-cli>
+* <https://github.com/m000/jj2cli>
 
 
 j2cli - Jinja2 Command-Line Tool
