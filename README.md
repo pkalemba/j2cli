@@ -1,21 +1,18 @@
 [![Build Status](https://travis-ci.org/kolypto/j2cli.svg)](https://travis-ci.org/kolypto/j2cli)
 [![Pythons](https://img.shields.io/badge/python-2.6%20%7C%202.7%20%7C%203.4%E2%80%933.7%20%7C%20pypy-blue.svg)](.travis.yml)
 
-🚧 Maintainer Wanted 🚧
-=======================
+Project Closed
+===============
 
-This project is looking for a maintaner.
+This project is not maintained anymore.
 
-If you're ready to support `j2cli` and keep it going, please respond :)
-
-Discussion here: [Maintainer Wanted](https://github.com/kolypto/j2cli/discussions/83)
-
-Alternatively, here are some actively maintained forks:
+Here are some actively maintained forks:
 
 * <https://github.com/kpfleming/jinjanator>
 * <https://github.com/mattrobenolt/jinja2-cli>
 * <https://github.com/m000/jj2cli>
 
+<hr />
 
 j2cli - Jinja2 Command-Line Tool
 ================================
