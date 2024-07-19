@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kolypto/j2cli.svg)](https://travis-ci.org/kolypto/j2cli)
+[![Build Status](https://travis-ci.org/kolypto/j2cmd.svg)](https://travis-ci.org/kolypto/j2cmd)
 [![Pythons](https://img.shields.io/badge/python-2.6%20%7C%202.7%20%7C%203.4%E2%80%933.7%20%7C%20pypy-blue.svg)](.travis.yml)
 
 Project Closed
@@ -10,14 +10,14 @@ Here are some actively maintained forks:
 
 * <https://github.com/kpfleming/jinjanator>
 * <https://github.com/mattrobenolt/jinja2-cli>
-* <https://github.com/m000/jj2cli>
+* <https://github.com/m000/jj2cmd>
 
 <hr />
 
-j2cli - Jinja2 Command-Line Tool
+j2cmd - Jinja2 Command-Line Tool
 ================================
 
-`j2cli` is a command-line tool for templating in shell-scripts,
+`j2cmd` is a command-line tool for templating in shell-scripts,
 leveraging the [Jinja2](http://jinja.pocoo.org/docs/) library.
 
 Features:
@@ -31,13 +31,13 @@ Inspired by [mattrobenolt/jinja2-cli](https://github.com/mattrobenolt/jinja2-cli
 ## Installation
 
 ```
-pip install j2cli
+pip install j2cmd
 ```
 
 To enable the YAML support with [pyyaml](http://pyyaml.org/):
 
 ```
-pip install j2cli[yaml]
+pip install j2cmd[yaml]
 ```
 
 ## Tutorial
@@ -165,7 +165,7 @@ Options:
     Will load all top-level functions and register them as filters.
     This option can be used multiple times to import several files.
 * `--tests tests.py`: Load custom Jinja2 filters and tests from a Python file.
-* `--customize custom.py`: A Python file that implements hooks to fine-tune the j2cli behavior.
+* `--customize custom.py`: A Python file that implements hooks to fine-tune the j2cmd behavior.
     This is fairly advanced stuff, use it only if you really need to customize the way Jinja2 is initialized.
     See [Customization](#customization) for more info.
 
@@ -318,7 +318,7 @@ Notice that there must be quotes around the environment variable name
 Customization
 =============
 
-j2cli now allows you to customize the way the application is initialized:
+j2cmd now allows you to customize the way the application is initialized:
 
 * Pass additional keywords to Jinja2 environment
 * Modify the context before it's used for rendering
@@ -343,8 +343,8 @@ The example customization.py file for your reference:
 
 ```python
 #
-# Example customize.py file for j2cli
-# Contains potional hooks that modify the way j2cli is initialized
+# Example customize.py file for j2cmd
+# Contains potional hooks that modify the way j2cmd is initialized
 
 
 def j2_environment_params():

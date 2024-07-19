@@ -1,13 +1,13 @@
 #! /usr/bin/env python
 
-""" j2cli main file """
+""" j2cmd main file """
 import pkg_resources
 
 __author__ = "Mark Vartanyan"
 __email__ = "kolypto@gmail.com"
-__version__ = pkg_resources.get_distribution('j2cli').version
+__version__ = pkg_resources.get_distribution('j2cmd').version
 
-from j2cli.cli import main
+from j2cmd.cli import main
 
 if __name__ == '__main__':
     main()

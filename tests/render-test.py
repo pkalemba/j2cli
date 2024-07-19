@@ -8,7 +8,7 @@ from copy import copy
 from contextlib import contextmanager
 from jinja2.exceptions import UndefinedError
 
-from j2cli.cli import render_command
+from j2cmd.cli import render_command
 
 @contextmanager
 def mktemp(contents):

@@ -107,7 +107,7 @@ def render_command(cwd, environ, stdin, argv):
         epilog=''
     )
     parser.add_argument('-v', '--version', action='version',
-                        version='j2cli {0}, Jinja2 {1}'.format(__version__, jinja2.__version__))
+                        version='j2cmd {0}, Jinja2 {1}'.format(__version__, jinja2.__version__))
 
     parser.add_argument('-f', '--format', default='?', help='Input data format', choices=['?'] + list(FORMATS.keys()))
     parser.add_argument('-e', '--import-env', default=None, metavar='VAR', dest='import_env',
@@ -117,7 +117,7 @@ def render_command(cwd, environ, stdin, argv):
     parser.add_argument('--tests', nargs='+', default=[], metavar='python-file', dest='tests',
                         help='Load custom Jinja2 tests from a Python file.')
     parser.add_argument('--customize', default=None, metavar='python-file.py', dest='customize',
-                        help='A Python file that implements hooks to fine-tune the j2cli behavior')
+                        help='A Python file that implements hooks to fine-tune the j2cmd behavior')
     parser.add_argument('--undefined', action='store_true', dest='undefined', help='Allow undefined variables to be used in templates (no error will be raised)')
     parser.add_argument('-o', metavar='outfile', dest='output_file', help="Output to a file instead of stdout")
     parser.add_argument('template', help='Template file to process')

@@ -1,6 +1,6 @@
 # {% raw %}
-# Example customize.py file for j2cli
-# Contains potional hooks that modify the way j2cli is initialized
+# Example customize.py file for j2cmd
+# Contains potional hooks that modify the way j2cmd is initialized
 
 
 def j2_environment_params():

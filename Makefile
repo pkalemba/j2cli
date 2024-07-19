@@ -7,8 +7,8 @@ SHELL := /bin/bash
 clean:
 	@rm -rf build/ dist/ *.egg-info/ README.md README.rst
 	@pip install -e .  # have to reinstall because we are using self
-README.md: $(shell find j2cli/) $(wildcard misc/_doc/**)
-	@python misc/_doc/README.py | python j2cli/__init__.py -f json -o $@ misc/_doc/README.md.j2
+README.md: $(shell find j2cmd/) $(wildcard misc/_doc/**)
+	@python misc/_doc/README.py | python j2cmd/__init__.py -f json -o $@ misc/_doc/README.md.j2
 
 
 .PHONY: build publish-test publish
